@@ -1,7 +1,7 @@
 node_modules
 *.ppt
 *.pptx
-*.md
+dialog.md
 .vscode/*
 .idea
 .DS_Store
