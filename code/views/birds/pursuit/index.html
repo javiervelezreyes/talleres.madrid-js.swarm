@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Aves · Pursuit</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <section class="card">
+    <h1>Pursuit</h1>
+    <canvas id="canvas" width="560" height="560"></canvas>
+    <p id="best"></p>
+    <div class="controls">
+      <label><span>Aves</span>  <input id="psize" type="number" value="20"  min="1"  max="200"></label>
+      <label><span>Delay</span> <input id="delay" type="number" value="100" min="30" max="2000" step="10"></label>
+    </div>
+    <div class="sliders">
+      <label><span>Inercia</span>  <input id="inertia"   type="range" min="0" max="1.2" step="0.05" value="0.7"><output id="inertia-out">0.7</output></label>
+      <label><span>Memoria</span>  <input id="cognitive" type="range" min="0" max="4"   step="0.1"  value="1.5"><output id="cognitive-out">1.5</output></label>
+      <label><span>Bandada</span>  <input id="social"    type="range" min="0" max="4"   step="0.1"  value="1.5"><output id="social-out">1.5</output></label>
+    </div>
+    <div class="buttons">
+      <button id="start">Launch</button>
+      <button id="reset">Reset</button>
+    </div>
+  </section>
+  <script type="module" src="./scripts/view.main.js"></script>
+</body>
+</html>

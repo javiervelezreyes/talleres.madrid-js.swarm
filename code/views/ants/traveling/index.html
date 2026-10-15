@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Hormigas · Viajante</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <section class="card">
+    <h1>Viajante</h1>
+    <canvas id="canvas" width="800" height="500"></canvas>
+    <p id="tour"></p>
+    <div class="controls">
+      <label><span>Ciudades</span>  <input id="csize" type="number" value="12" min="3" max="40"></label>
+      <label><span>Hormigas</span>  <input id="asize" type="number" value="8"  min="1" max="100"></label>
+      <label><span>Delay</span>     <input id="delay" type="number" value="400" min="50" max="2000" step="50"></label>
+    </div>
+    <div class="sliders">
+      <label><span>Rastro</span>      <input id="alpha" type="range" min="0" max="5" step="0.1" value="1"><output id="alpha-out">1</output></label>
+      <label><span>Distancia</span>   <input id="beta"  type="range" min="0" max="5" step="0.1" value="2"><output id="beta-out">2</output></label>
+      <label><span>Evaporación</span> <input id="rate"  type="range" min="0" max="0.01" step="0.0005" value="0.001"><output id="rate-out">0.001</output></label>
+    </div>
+    <div class="buttons">
+      <button id="start">Launch</button>
+      <button id="reset">Reset</button>
+    </div>
+  </section>
+  <script type="module" src="./scripts/view.main.js"></script>
+</body>
+</html>

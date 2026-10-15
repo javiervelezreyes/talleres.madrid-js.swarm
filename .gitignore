@@ -1,0 +1,7 @@
+node_modules
+*.ppt
+*.pptx
+*.md
+.vscode/*
+.idea
+.DS_Store
